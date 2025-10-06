@@ -1,0 +1,14 @@
+.footer {
+    padding: 3rem 0;
+    text-align: center;
+    color: #9ca3af;
+}
+
+.footer-text {
+    font-size: 1.125rem;
+}
+
+.footer-subtext {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+}

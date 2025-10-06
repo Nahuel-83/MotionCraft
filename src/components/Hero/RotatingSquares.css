@@ -1,0 +1,27 @@
+.rotating-squares {
+    margin-top: 4rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.rotating-square {
+    width: 4rem;
+    height: 4rem;
+}
+
+.square-1 {
+    background: linear-gradient(135deg, #ec4899, #a855f7);
+    border-radius: 0.5rem;
+}
+
+.square-2 {
+    background: linear-gradient(135deg, #3b82f6, #06b6d4);
+    border-radius: 50%;
+}
+
+.square-3 {
+    background: linear-gradient(135deg, #eab308, #f97316);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}

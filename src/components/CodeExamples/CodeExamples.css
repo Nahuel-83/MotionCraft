@@ -1,0 +1,36 @@
+.code-examples-section {
+    padding: 6rem 1.5rem;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.code-examples-container {
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.code-examples-title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 4rem;
+    background: linear-gradient(to right, #a855f7, #ec4899);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.code-examples-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 3rem;
+}
+
+@media (max-width: 768px) {
+    .code-examples-title {
+        font-size: 2rem;
+    }
+
+    .code-examples-grid {
+        grid-template-columns: 1fr;
+    }
+}

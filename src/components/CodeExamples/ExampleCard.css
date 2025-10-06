@@ -1,0 +1,56 @@
+.example-card {
+    opacity: 0;
+}
+
+.example-card-content {
+    background: #1e293b;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.example-card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.title-cyan {
+    color: #06b6d4;
+}
+
+.title-purple {
+    color: #a855f7;
+}
+
+.title-pink {
+    color: #ec4899;
+}
+
+.title-yellow {
+    color: #eab308;
+}
+
+.example-card-demo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12rem;
+    background: #0f172a;
+    border-radius: 0.75rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.example-card-code {
+    margin-top: 1.5rem;
+    font-size: 0.875rem;
+    color: #d1d5db;
+    background: #020617;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    overflow-x: auto;
+}
+
+.example-card-code code {
+    font-family: 'Courier New', monospace;
+}

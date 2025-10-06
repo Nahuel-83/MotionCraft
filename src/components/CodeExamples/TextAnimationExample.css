@@ -1,0 +1,14 @@
+.text-animation-container {
+    display: flex;
+    gap: 0.25rem;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .text-letter {
+    display: inline-block;
+    background: linear-gradient(135deg, #ec4899, #8b5cf6, #06b6d4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }

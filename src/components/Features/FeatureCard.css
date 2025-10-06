@@ -1,0 +1,63 @@
+.feature-card {
+    opacity: 0;
+}
+
+.feature-card-content {
+    padding: 1.5rem;
+    border-radius: 1rem;
+    height: 100%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.feature-card-content:hover {
+    transform: scale(1.05);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.feature-card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+}
+
+.feature-card-description {
+    color: #f3f4f6;
+    opacity: 0.9;
+}
+
+.gradient-pink {
+    background: linear-gradient(135deg, #ec4899, #f43f5e);
+}
+
+.gradient-purple {
+    background: linear-gradient(135deg, #a855f7, #6366f1);
+}
+
+.gradient-blue {
+    background: linear-gradient(135deg, #3b82f6, #06b6d4);
+}
+
+.gradient-cyan {
+    background: linear-gradient(135deg, #06b6d4, #14b8a6);
+}
+
+.gradient-teal {
+    background: linear-gradient(135deg, #14b8a6, #22c55e);
+}
+
+.gradient-green {
+    background: linear-gradient(135deg, #22c55e, #84cc16);
+}
+
+.gradient-yellow {
+    background: linear-gradient(135deg, #eab308, #f97316);
+}
+
+.gradient-orange {
+    background: linear-gradient(135deg, #f97316, #ef4444);
+}
+
+.gradient-red {
+    background: linear-gradient(135deg, #ef4444, #ec4899);
+}

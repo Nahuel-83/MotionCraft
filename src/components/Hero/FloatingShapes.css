@@ -1,0 +1,47 @@
+.floating-shapes {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.floating-shape {
+  position: absolute;
+  opacity: 0.2;
+}
+
+.shape-1 {
+  top: 5rem;
+  left: 2.5rem;
+  width: 5rem;
+  height: 5rem;
+  background: linear-gradient(135deg, #ec4899, #a855f7);
+  border-radius: 50%;
+}
+
+.shape-2 {
+  top: 10rem;
+  right: 5rem;
+  width: 8rem;
+  height: 8rem;
+  background: linear-gradient(135deg, #3b82f6, #06b6d4);
+  border-radius: 0.5rem;
+}
+
+.shape-3 {
+  bottom: 8rem;
+  left: 25%;
+  width: 6rem;
+  height: 6rem;
+  background: linear-gradient(135deg, #eab308, #f97316);
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+.shape-4 {
+  top: 33.333%;
+  right: 33.333%;
+  width: 4rem;
+  height: 4rem;
+  background: linear-gradient(135deg, #22c55e, #10b981);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
