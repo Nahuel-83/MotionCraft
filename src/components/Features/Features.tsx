@@ -31,15 +31,13 @@ const Features: React.FC = () => {
   }, []);
 
   return (
-    <section className="features-section">
-      <h2 className="features-title">Powerful Features</h2>
-      
+    <div className="features-section">
       <div className="features-grid">
         {featuresData.map((feature, index) => (
           <FeatureCard key={index} {...feature} />
         ))}
       </div>
-    </section>
+    </div>
   );
 };
 

@@ -1,0 +1,247 @@
+.camera-explode-section {
+  min-height: 100vh;
+  padding: 0;
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.camera-explode-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 50% 50%, var(--glow-purple) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.camera-explode-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.camera-explode-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: var(--spacing-sm);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 0 30px var(--glow-purple));
+}
+
+.camera-explode-subtitle {
+  font-size: 1.5rem;
+  text-align: center;
+  color: var(--text-muted);
+  margin-bottom: var(--spacing-lg);
+  font-weight: 300;
+}
+
+.camera-stage {
+  position: relative;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px;
+}
+
+/* Cámara completa inicial */
+.camera-complete {
+  position: absolute;
+  width: 300px;
+  height: auto;
+  opacity: 0;
+  z-index: 10;
+}
+
+.camera-svg {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 20px 60px var(--glow-purple));
+}
+
+/* Contenedor de partes */
+.camera-parts {
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+
+/* Partes individuales */
+.camera-part {
+  position: absolute;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.camera-part.lens {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+}
+
+.camera-part.body {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+}
+
+.camera-part.viewfinder {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+}
+
+.part-svg {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.5));
+  margin-bottom: 1rem;
+}
+
+/* Líneas conectoras */
+.connector-line {
+  width: 2px;
+  height: 40px;
+  background: linear-gradient(180deg, var(--color-primary), transparent);
+  margin: var(--spacing-xs) 0;
+  transform-origin: top center;
+  opacity: 0;
+  box-shadow: 0 0 10px var(--glow-purple);
+}
+
+/* Etiquetas de las partes */
+.part-label {
+  background: rgba(15, 23, 42, 0.95);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-sm) var(--spacing-md);
+  text-align: center;
+  backdrop-filter: blur(10px);
+  box-shadow: var(--shadow-lg);
+  opacity: 0;
+  min-width: 200px;
+}
+
+.part-label h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--color-primary);
+  margin: 0 0 var(--spacing-xs) 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.part-label p {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Hint de scroll */
+.scroll-hint {
+  position: absolute;
+  bottom: var(--spacing-md);
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: var(--text-dark);
+  opacity: 0.6;
+}
+
+.scroll-hint p {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.scroll-arrow {
+  font-size: 2rem;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .camera-explode-title {
+    font-size: 2.5rem;
+  }
+
+  .camera-explode-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .camera-complete {
+    width: 200px;
+  }
+
+  .camera-part.lens {
+    width: 100px;
+  }
+
+  .camera-part.body {
+    width: 140px;
+  }
+
+  .camera-part.viewfinder {
+    width: 80px;
+  }
+
+  .part-label {
+    min-width: 150px;
+    padding: 0.75rem 1rem;
+  }
+
+  .part-label h3 {
+    font-size: 1rem;
+  }
+
+  .part-label p {
+    font-size: 0.75rem;
+  }
+
+  .camera-stage {
+    min-height: 500px;
+  }
+
+  .camera-parts {
+    height: 500px;
+  }
+}
+
+@media (max-width: 480px) {
+  .camera-explode-section {
+    padding: 4rem 1rem;
+  }
+
+  .camera-explode-title {
+    font-size: 2rem;
+  }
+
+  .camera-explode-subtitle {
+    font-size: 1rem;
+  }
+}

@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <section ref={heroRef} className="hero">
+    <div ref={heroRef} className="hero">
       <FloatingShapes />
       
       <div className="hero-content">
@@ -46,7 +46,7 @@ const Hero: React.FC = () => {
         
         <RotatingSquares />
       </div>
-    </section>
+    </div>
   );
 };
 

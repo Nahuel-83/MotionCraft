@@ -3,31 +3,40 @@
 }
 
 .example-card-content {
-    background: #1e293b;
-    border-radius: 1rem;
-    padding: 2rem;
+    background: var(--bg-medium);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-md);
+    border: 1px solid rgba(139, 92, 246, 0.2);
+    transition: all var(--transition-normal);
+}
+
+.example-card-content:hover {
+    border-color: rgba(139, 92, 246, 0.4);
+    box-shadow: 0 0 30px var(--glow-purple);
+    transform: translateY(-4px);
 }
 
 .example-card-title {
     font-size: 1.5rem;
     font-weight: bold;
-    margin-bottom: 1.5rem;
+    margin-bottom: var(--spacing-md);
+    text-shadow: 0 0 20px currentColor;
 }
 
 .title-cyan {
-    color: #06b6d4;
+    color: var(--color-accent);
 }
 
 .title-purple {
-    color: #a855f7;
+    color: var(--color-primary);
 }
 
 .title-pink {
-    color: #ec4899;
+    color: var(--color-secondary);
 }
 
 .title-yellow {
-    color: #eab308;
+    color: #fbbf24;
 }
 
 .example-card-demo {
@@ -35,20 +44,22 @@
     justify-content: center;
     align-items: center;
     height: 12rem;
-    background: #0f172a;
-    border-radius: 0.75rem;
+    background: var(--bg-dark);
+    border-radius: var(--radius-md);
     position: relative;
     overflow: hidden;
+    border: 1px solid rgba(139, 92, 246, 0.1);
 }
 
 .example-card-code {
-    margin-top: 1.5rem;
+    margin-top: var(--spacing-md);
     font-size: 0.875rem;
-    color: #d1d5db;
-    background: #020617;
-    padding: 1rem;
-    border-radius: 0.5rem;
+    color: var(--text-secondary);
+    background: var(--bg-darker);
+    padding: var(--spacing-sm);
+    border-radius: var(--radius-sm);
     overflow-x: auto;
+    border: 1px solid rgba(139, 92, 246, 0.15);
 }
 
 .example-card-code code {

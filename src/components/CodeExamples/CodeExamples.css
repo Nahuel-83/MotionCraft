@@ -1,28 +1,29 @@
 .code-examples-section {
-    padding: 6rem 1.5rem;
-    background: rgba(0, 0, 0, 0.3);
+    padding: 0;
+    background: transparent;
 }
 
 .code-examples-container {
-    max-width: 80rem;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
 .code-examples-title {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 4rem;
-    background: linear-gradient(to right, #a855f7, #ec4899);
+    margin-bottom: var(--spacing-lg);
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    filter: drop-shadow(0 0 20px var(--glow-purple));
 }
 
 .code-examples-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-    gap: 3rem;
+    gap: var(--spacing-md);
 }
 
 @media (max-width: 768px) {
