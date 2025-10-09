@@ -26,10 +26,10 @@ const DraggableExample: React.FC = () => {
           animate(element, {
             translateX: 0,
             translateY: 0,
-            duration: 800,
+            duration: 1000,
             easing: createSpring({
-              stiffness: 80,
-              damping: 10
+              stiffness: 100,
+              damping: 12
             })
           });
         }
@@ -58,9 +58,10 @@ const DraggableExample: React.FC = () => {
 animate('.item', {
   translateX: 0,
   translateY: 0,
+  duration: 1000,
   easing: createSpring({
-    stiffness: 80,
-    damping: 10
+    stiffness: 100,
+    damping: 12
   })
 });`;
 

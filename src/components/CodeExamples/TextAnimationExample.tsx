@@ -14,25 +14,26 @@ const TextAnimationExample: React.FC = () => {
         .join('');
 
       animate('.text-letter', {
-        translateY: [-50, 0],
+        translateY: [-60, 0],
         opacity: [0, 1],
         rotate: [-45, 0],
-        scale: [0.3, 1],
-        delay: stagger(100),
-        duration: 800,
-        easing: 'out(3)',
+        scale: [0.5, 1.1, 1],
+        delay: stagger(80),
+        duration: 1000,
+        easing: 'outElastic(1, 0.6)',
         loop: true,
-        loopDelay: 2000
+        loopDelay: 2500
       });
     }
   }, []);
 
   const code = `animate('.letter', {
-  translateY: [-50, 0],
+  translateY: [-60, 0],
   opacity: [0, 1],
   rotate: [-45, 0],
-  scale: [0.3, 1],
-  delay: stagger(100),
+  scale: [0.5, 1.1, 1],
+  delay: stagger(80),
+  easing: 'outElastic(1, 0.6)',
   loop: true
 });`;
 

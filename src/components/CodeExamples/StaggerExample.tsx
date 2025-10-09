@@ -6,26 +6,28 @@ import './StaggerExample.css';
 const StaggerExample: React.FC = () => {
   useEffect(() => {
     animate('.stagger-dot', {
-      scale: [0.5, 1.5, 1],
+      scale: [0.8, 1.3, 1],
       rotate: [0, 180, 360],
-      opacity: [0.3, 1],
-      delay: stagger(40, { grid: [10, 10], from: 'center' }),
-      duration: 1200,
-      easing: 'out(3)',
+      opacity: [0.5, 1, 0.5],
+      delay: stagger(35, { grid: [10, 10], from: 'center' }),
+      duration: 1800,
+      easing: 'inOutQuart',
       loop: true,
-      alternate: true
+      direction: 'alternate'
     });
   }, []);
 
   const code = `animate('.dot', {
-  scale: [0.5, 1.5, 1],
+  scale: [0.8, 1.3, 1],
   rotate: [0, 180, 360],
-  delay: stagger(40, {
+  opacity: [0.5, 1, 0.5],
+  delay: stagger(35, {
     grid: [10, 10],
     from: 'center'
   }),
-  loop: true,
-  alternate: true
+  duration: 1800,
+  easing: 'inOutQuart',
+  loop: true
 });`;
 
   return (

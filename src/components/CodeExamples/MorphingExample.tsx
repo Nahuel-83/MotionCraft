@@ -12,8 +12,8 @@ const MorphingExample: React.FC = () => {
         'M30,30 L70,30 L70,70 L30,70 Z',
         'M50,10 L90,90 L10,90 Z'
       ],
-      easing: 'inOut(3)',
-      duration: 4000,
+      easing: 'inOutElastic(1, 0.6)',
+      duration: 5000,
       loop: true
     });
   }, []);
@@ -24,8 +24,8 @@ const MorphingExample: React.FC = () => {
     'M50,10 C70,10 90,30...',
     'M10,50 L50,10 L90,50...'
   ],
-  easing: 'inOut(3)',
-  duration: 4000,
+  easing: 'inOutElastic(1, 0.6)',
+  duration: 5000,
   loop: true
 });`;
 

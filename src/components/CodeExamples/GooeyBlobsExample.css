@@ -1,0 +1,7 @@
+.gooey-stage { width: 100%; height: 12rem; background: linear-gradient(180deg, #0b1020, #0f172a); border-radius: 0.75rem; position: relative; overflow: hidden; }
+.blobs { width: 100%; height: 100%; position: relative; }
+.blob { position: absolute; width: 5rem; height: 5rem; background: radial-gradient(circle at 30% 30%, #f472b6, #8b5cf6); }
+.b1 { left: 18%; top: 36%; }
+.b2 { left: 42%; top: 24%; background: radial-gradient(circle at 30% 30%, #22d3ee, #0ea5e9); }
+.b3 { left: 60%; top: 52%; background: radial-gradient(circle at 30% 30%, #34d399, #06b6d4); }
+.b4 { left: 76%; top: 30%; background: radial-gradient(circle at 30% 30%, #f59e0b, #fb7185); }

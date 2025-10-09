@@ -5,6 +5,12 @@ import DraggableExample from './DraggableExample';
 import RotationExample from './RotationExample';
 import PathAnimationExample from './PathAnimationExample';
 import TextAnimationExample from './TextAnimationExample';
+import ParallaxCardsExample from './ParallaxCardsExample';
+import GooeyBlobsExample from './GooeyBlobsExample';
+import OrbitParticlesExample from './OrbitParticlesExample';
+import FlipGalleryExample from './FlipGalleryExample';
+import TimelineOrchestratorExample from './TimelineOrchestratorExample';
+import ScrollRevealExample from './ScrollRevealExample';
 import './CodeExamples.css';
 
 const CodeExamples: React.FC = () => {
@@ -20,6 +26,12 @@ const CodeExamples: React.FC = () => {
           <TextAnimationExample />
           <DraggableExample />
           <RotationExample />
+          <ParallaxCardsExample />
+          <GooeyBlobsExample />
+          <OrbitParticlesExample />
+          <FlipGalleryExample />
+          <TimelineOrchestratorExample />
+          <ScrollRevealExample />
         </div>
       </div>
     </section>
